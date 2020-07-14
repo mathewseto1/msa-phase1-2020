@@ -24,8 +24,7 @@ export default function CharacterCards() {
             Lizard
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            CHANGE THIS LATER TO USE THE PROP CHARACTER INFORMATION.
           </Typography>
         </CardContent>
             </CardActionArea>
