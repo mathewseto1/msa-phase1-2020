@@ -8,7 +8,7 @@ interface ISearchBarProps {
  SetUserInput: (userInput: IUserInput) => void; //the interface is a function that takes a user input and returns nothing.
 }
 
-function SearchBar() {
+function SearchBar(props: ISearchBarProps) {
     const [UserInput, SetUserInput] = useState<string | null>("");
 
     const handleUserInputChange =  (UserStringValue : string |null) =>{
@@ -22,7 +22,7 @@ function SearchBar() {
                 userInput:UserInput
             }
         // console.log(userInput)
-        //props.SetUserInput(userInput)
+        props.SetUserInput(userInput)
         }
         else{
             setFocusOn(true);
