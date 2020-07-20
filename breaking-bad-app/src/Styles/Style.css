@@ -16,3 +16,31 @@
     flex: 1;
     flex-direction: column;
 }
+.Title{
+    font-size: 30pt;
+    font-weight: 600;
+    color: #0D3E10;
+}
+.svgImage{
+    height: 50px;
+    width: 65px;
+}
+.ContainerGrid{
+    justify-content: center;
+    flex:1
+}
+.SearchButton{
+    background-color: #0D3E10!important;
+    padding-top: 3cm;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.MuiGrid-root{
+    padding-bottom: 8px;
+    display:inline;
+    justify-content: center;
+}
+.test{
+    padding-top: 12px;
+}

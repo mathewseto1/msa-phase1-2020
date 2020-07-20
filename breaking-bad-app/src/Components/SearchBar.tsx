@@ -32,12 +32,12 @@ function SearchBar(props: ISearchBarProps) {
 
     return (
     <div>
-        <Grid container spacing={3}>
-            <Grid item xs={6} sm={3}>
+        <Grid className = "ContainerGrid" container spacing={1}>
+            <Grid item xs={1} sm={2}>
                 <TextField id="outlined-basic" label="Enter a Character" variant="outlined" onClick = {() => setFocusOn(true)} error ={FocusOn && UserInput === ""} value = {UserInput} onChange ={text => handleUserInputChange(text.target.value)}/>
             </Grid>
-            <Grid item xs={6} sm={3}>
-                <Button variant="contained" color="primary" onClick = {handleSubmit}>Submit</Button>
+            <Grid className = "test">
+                <Button className = "SearchButton" variant="contained" color="primary" onClick = {handleSubmit}>Search</Button>
             </Grid>
         
         </Grid>
