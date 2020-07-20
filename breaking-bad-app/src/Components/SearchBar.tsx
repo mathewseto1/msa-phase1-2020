@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import Button from '@material-ui/core/Button'
 import { Grid, TextField } from '@material-ui/core';
 import {IUserInput} from '../Common Intefaces/interfaces';
-import { prependOnceListener } from 'process';
 
 interface ISearchBarProps {
  SetUserInput: (userInput: IUserInput) => void; //the interface is a function that takes a user input and returns nothing.

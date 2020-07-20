@@ -1,0 +1,18 @@
+.MediaCardContainer{
+    max-width: 410px;
+    margin: auto;
+}
+.CardImage{
+    height: 460px !important;
+    max-width: 410px;
+}
+.CardInformation{
+    /* display:"block"; */
+    height: 200px;
+    /* overflow-wrap: break-word; */
+    
+}
+.listitem{
+    flex: 1;
+    flex-direction: column;
+}

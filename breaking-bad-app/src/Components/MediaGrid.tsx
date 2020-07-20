@@ -13,6 +13,9 @@ interface IState{
     status:string;
     nickname:string;
 
+    appearance:string;
+    portrayed:string;
+    char_id: string;
 }
 
 interface IMediaGridProps {
@@ -21,7 +24,7 @@ interface IMediaGridProps {
 
 export default function MediaGrid(props: IMediaGridProps) {
 
-    const [ItemArray, setItemArray] = useState<IState[]>([{links:[],data:[],name:"",img:"",birthday:"", occupation:[], status:"", nickname:""}])
+    const [ItemArray, setItemArray] = useState<IState[]>([{links:[],data:[],name:"",img:"",birthday:"", occupation:[], status:"", nickname:"", appearance:"", portrayed:"", char_id:""}])
 
         useEffect(() => {
             fetch('https://www.breakingbadapi.com/api/characters?name='+props.SearchQuery)
@@ -41,13 +44,18 @@ export default function MediaGrid(props: IMediaGridProps) {
             if (el === null || el === undefined || ItemArray.length === 0) {
                 return;
             }
-            var characterdescription = "Birthday:" + el["birthday"] + " " + "fsddddddddddddddddddddddddddddddddddddddddasdfsfsd"
+            //{console.log(i)}
+            //description = ["Birthday: " + el["birthday"], "Occupation: " + el["occupation"]];
             
+
+
+            //var characterdescription = "Birthday:" + el["birthday"] + "Occupation: " + el["occupation"]
+            var characterdescription = ["Birthday: " + el["birthday"],"Occupation: " + el["occupation"],"Status: " + el["status"], "Nickname: " + el["nickname"], "Episode Appearance: " + el["appearance"], "Actor: " + el["portrayed"], el["char_id"]]
+             
 
             Cards.push(
                 <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="MediaGridCard">
-                    {/* <CharacterCards image={""} characterInformation={el["name"]} /> */}
-                    <CharacterCards image={el["img"]} characterName={el["name"]} characterInformation ={characterdescription} />
+                    <CharacterCards image={el["img"]} characterName={el["name"]} characterInformation ={characterdescription}/>
                 </Grid>)
         })
 
