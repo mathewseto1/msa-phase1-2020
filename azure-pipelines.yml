@@ -5,7 +5,7 @@
 
 trigger:
 - master
-
+- develop
 variables:
   rootDir: 'breaking-bad-app'
   buildDir: '$(rootDir)/build'
