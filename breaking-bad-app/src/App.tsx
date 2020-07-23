@@ -20,7 +20,7 @@ function App() {
         <img className = "svgImage" alt = "Breaking bad logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1280px-Breaking_Bad_logo.svg.png"/>
         Breaking bad Character finder
       </div>
-      <p>Test environment 111</p>
+      <p>Test environment 11122</p>
       <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
       <MediaGrid SearchQuery={UserInput.userInput}/>
 
