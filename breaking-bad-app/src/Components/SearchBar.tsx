@@ -31,7 +31,7 @@ function SearchBar(props: ISearchBarProps) {
     const [FocusOn, setFocusOn] = useState<boolean>(false);
 
     return (
-    <div>
+
         <Grid className = "ContainerGrid" container spacing={1}>
             <Grid item xs={1} sm={2}>
                 <TextField id="outlined-basic" label="Enter a Character" variant="outlined" onClick = {() => setFocusOn(true)} error ={FocusOn && UserInput === ""} value = {UserInput} onChange ={text => handleUserInputChange(text.target.value)}/>
@@ -41,8 +41,6 @@ function SearchBar(props: ISearchBarProps) {
             </Grid>
         
         </Grid>
-
-    </div>
     )
 }
 

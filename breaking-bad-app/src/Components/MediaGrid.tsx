@@ -44,12 +44,6 @@ export default function MediaGrid(props: IMediaGridProps) {
             if (el === null || el === undefined || ItemArray.length === 0) {
                 return;
             }
-            //{console.log(i)}
-            //description = ["Birthday: " + el["birthday"], "Occupation: " + el["occupation"]];
-            
-
-
-            //var characterdescription = "Birthday:" + el["birthday"] + "Occupation: " + el["occupation"]
             var characterdescription = ["Birthday: " + el["birthday"],"Occupation: " + el["occupation"],"Status: " + el["status"], "Nickname: " + el["nickname"], "Episode Appearance: " + el["appearance"], "Actor: " + el["portrayed"], el["char_id"]]
              
 
