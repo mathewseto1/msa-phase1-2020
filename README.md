@@ -8,3 +8,5 @@ The release pipeline shows all the breaking-bad characters from the television s
 The build has the samething on the release pipeline but I have included a exandble and collapsble icon which I will probably add a quiz or a youtube link to scenes from the show.
 
 The reason I choose to create this web app is to get more people into the breaking bad television show.
+
+I have learn't to use Azure pipeline to deploy my website to a online page, so people can view the website.
